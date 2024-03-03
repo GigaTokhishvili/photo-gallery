@@ -1,0 +1,22 @@
+.imageSection {
+    padding: 1rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .imageSection {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imageSection {
+        padding: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 300px;
+    }
+}
